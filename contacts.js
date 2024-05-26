@@ -30,15 +30,6 @@ export async function addContact(data) {
     return newContact;
 }
 
-// export async function updateContactById(id, data) {
-//     const contacts = await getContacts();
-//     const idx = contacts.findIndex((contact) => contact.id === id);
-//     if (idx === -1) return null;
-//     contacts[idx] = { ...contacts[idx], ...data };
-//     await updateContacts(contacts);
-//     return contacts[idx];
-// }
-
 export async function deleteContactById(id) {
     const contacts = await getContacts();
     const idx = contacts.findIndex((contact) => contact.id === id);
